@@ -1,8 +1,6 @@
-function delay( ms ) {
-    return new Promise(resolve => setTimeout( () => resolve( ms ), ms ));
+function delay(ms) {
+    return new Promise(resolve => setTimeout(() => resolve(ms), ms));
   }
 
-
 /* Tests */
-
-delay(1000).then(value => console.log(`Done with ${value}`)); 
+delay(1000).then(value => console.log(`Done with ${value}`));
