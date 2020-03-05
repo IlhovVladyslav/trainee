@@ -15,7 +15,6 @@ class Universe {
 }
 
 /* Tests */
-
 let a = new Universe();
 let b = new Universe();
 
