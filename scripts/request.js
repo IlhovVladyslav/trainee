@@ -1,7 +1,7 @@
 function request(){
     fetch('http://www.json-generator.com/api/json/get/cfQCylRjuG')
     .then(response => response.json())
-    .then(({getUsersData} = data) => {
+    .then(({getUsersData}) => {
         if(getUsersData){
           return fetch('http://www.json-generator.com/api/json/get/cfVGucaXPC')
         }
