@@ -6,9 +6,8 @@ const url = [
     'http://www.json-generator.com/api/json/get/ceQMMKpidK'
 ];
 
-const resultArray = url.reduce((prevPr, сurrItem) => {
-    return prevPr.then((acc) => fetch(сurrItem).then(resp => resp.json()).then(resp => [...acc, resp]))
-}, Promise.resolve([]))
+const resultArray = url.reduce((prevPr, сurrItem) => prevPr.then((acc) => fetch(сurrItem).then(resp => resp.json()).then(resp => [...acc, resp])), 
+    Promise.resolve([]))
 
 resultArray.then(console.log)
 
