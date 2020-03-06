@@ -6,21 +6,9 @@ const url = [
     'http://www.json-generator.com/api/json/get/ceQMMKpidK'
 ];
 
-const consistentPromises = (promisesArray) => {
-    let count = 0
-    const resultArray = []
-    const promiseСhain = (promisesArray) => {
-        fetch(promisesArray[count])
-        .then(res => res.json())
-        .then(data => {
-            count++
-            resultArray.push(data)
-            console.log(resultArray)      
-        })
-        .then(() => (count === promisesArray.length) ? resultArray : promiseСhain(promisesArray))
-        .catch(error => console.log(error))
-    }
-    promiseСhain(promisesArray)
-}
+const resultArray = url.reduce((prevPr, сurrItem) => {
+    return prevPr.then((acc) => fetch(сurrItem).then(resp => resp.json()).then(resp => [...acc, resp]))
+}, Promise.resolve([]))
 
-consistentPromises(url)
+resultArray.then(console.log)
+
