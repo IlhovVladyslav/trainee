@@ -2,6 +2,6 @@ if (!Object.create) {
     Object.create = function(arg) {
       function Func() {}
       Func.prototype = arg;
-      return new Function();
+      return new Func();
     };
   }
