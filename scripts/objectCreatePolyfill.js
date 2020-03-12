@@ -9,7 +9,7 @@ if (!Object.create) {
       if (typeof(props) === "object") {
         for (prop in props) {
          if (props.hasOwnProperty((prop))) {
-            Object.defineProperty(obj, prop, {value: props[prop]})
+          obj.defineProperty(prop, {value: props[prop]})
          }
         }
        }
