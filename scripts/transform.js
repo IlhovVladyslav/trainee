@@ -7,4 +7,7 @@ function transform(arg){
 }
 
 /* Test */
-console.log(transform('a.b.c.d')) // {a: {b: {c: {d: {}}}}}
+console.log(transform('a.b.c.d')) 
+
+// {a: {b: {c: {d: {}}}}}
+
