@@ -1,9 +1,5 @@
 function transform(arg){
-    const obj = {}
-    arg.split('.').reduce((obj, i)=>{
-           return (obj[i] = {});
-    }, obj);
-  return obj  
+    return arg.split('.').reverse().reduce((obj, i) => ({[i]: obj}), null);
 }
 
 /* Test */
