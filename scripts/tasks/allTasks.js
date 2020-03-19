@@ -1,0 +1,13 @@
+import * as anagrams from './anagrams.js';
+import * as consistentPromises from './consistentPromises.js';
+import * as dalay from './dalay.js';
+import * as myFunctions from './myFunctions.js';
+import * as objectCreatePolyfill from './objectCreatePolyfill.js';
+import * as myNew from './myNew.js';
+import * as promiseAll from './promiseAll.js';
+import * as request from './request.js';
+import * as resolvePromise from './resolvePromise.js';
+import * as singleton from './singleton.js';
+import * as sum from './sum.js';
+import * as transform from './transform.js';
+import * as union from './union.js';
