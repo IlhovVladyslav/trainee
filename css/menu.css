@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Baloo+Chettan+2&display=swap');
+
+*{
+    outline: none !important
+}
+body{
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background: #212931;
+    height: 100vh;
+}
+.menu-logo{
+    width: 60px;
+    height: 60px;
+}
+.btn-menu{
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    color: #fdda00;
+    background: #fff;
+    height: 60px;
+    width: 60px;
+    border: 1px solid #fdda00;
+    cursor: pointer;
+}
+.btn-menu:hover, .btn-menu:active, .btn-menu:visited{
+    color: #fff;
+    background: #fdda00;
+    outline: none !important
+}
+.main-menu{
+    background: white;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.list-menu{
+    color: #212931;
+    background: #fff;
+    position: fixed;
+    width: 60px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    left: -60px;
+    transition: 0.5s;
+}
+.menu-part{
+    left: 0px;
+}
+.menu-open{
+    width: 300px;
+    left: 0px;
+}
+.list-menu a{
+    color: #212931;
+    text-decoration: none;
+    outline: none;
+}
+.list-menu li {
+    background: #fff;
+    overflow: hidden;
+    justify-items: center;
+    list-style-type: none;
+    height: 60px;
+    border-bottom: 1px solid #fdda00;
+}
+.list-menu i {
+    text-align: center;
+    height: 59px;
+    width: 59px;
+    font-size: 25px;
+    margin: 0px;
+    padding-top: 20px;
+}
+.list-menu li:hover{
+    transition: 0.5s;
+    color: #212931;
+    background: #fdda00;
+}
